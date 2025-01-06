@@ -1,0 +1,8 @@
+import pyttsx3
+engine = pyttsx3.init()
+text = input("Enter the text you want to hear: ").strip()
+if text:
+    engine.say(text)
+    engine.runAndWait()  
+else:
+    print("You didn't enter any text. Please try again.")
